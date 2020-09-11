@@ -1,4 +1,4 @@
-package com.example.demo.service.service;
+package com.example.demo.service.service.implement;
 
 import java.util.List;
 
@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.service.dao.InterfazEmpresaDAO;
 import com.example.demo.service.entity.Empresa;
+import com.example.demo.service.service.InterfazEmpresaService;
 
 @Service
 public class EmpresaServicioImpl implements InterfazEmpresaService{

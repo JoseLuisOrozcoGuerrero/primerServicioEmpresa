@@ -1,5 +1,6 @@
 package com.example.demo.service.controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.service.entity.Empresa;
-import com.example.demo.service.entity.GestionCita;
 import com.example.demo.service.service.InterfazEmpresaService;
 
 @RestController
@@ -31,6 +31,7 @@ public class EmpresaServiceControllers {
 	private InterfazEmpresaService empserv;
 	
 	//-----------------------------------------------------------------
+	
 	@GetMapping("/listempresas")
 	public List<Empresa>getListEmpresa(){
 		System.out.println("ListarFunciona");
